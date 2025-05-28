@@ -13,8 +13,8 @@ main:
  	mov x20, x0	// Guarda la dirección base del framebuffer en x20
 	//---------------- CODE HERE ------------------------------------
 
-	movz x10, 0xC7, lsl 16
-	movk x10, 0x1585, lsl 00
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xFFCC, lsl 00    // color 1 (verde)
 
 	mov x2, SCREEN_HEIGH         // Y Size
 loop1:
@@ -26,6 +26,32 @@ loop0:
 	cbnz x1,loop0  // Si no terminó la fila, salto
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1  // Si no es la última fila, salto
+	
+// Volver al comienzo del framebuffer
+	mov x0, x20
+
+	// Definir color rojo
+	movz x10, 0x00FF, lsl 16     // parte alta (0xFF rojo)
+	movk x10, 0x0000, lsl 00     // parte baja (0x0000)
+
+	// Alto del rectángulo = 250
+	mov x2, 250
+rect_y_loop:
+	// Ancho del rectángulo = 200
+	mov x1, 200
+rect_x_loop:
+	stur w10, [x0]             // escribir píxel rojo
+	add x0, x0, 4              // siguiente píxel
+	sub x1, x1, 1
+	cbnz x1, rect_x_loop
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 200) * 4
+
+	sub x2, x2, 1
+	cbnz x2, rect_y_loop
+
+	
 
 	// Ejemplo de uso de gpios
 	mov x9, GPIO_BASE
@@ -45,6 +71,7 @@ loop0:
 	// w11 será 1 si había un 1 en la posición 2 de w10, si no será 0
 	// efectivamente, su valor representará si GPIO 2 está activo
 	lsr w11, w11, 1
+	   
 
 	//---------------------------------------------------------------
 	// Infinite Loop
