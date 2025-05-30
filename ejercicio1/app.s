@@ -27,15 +27,18 @@ loop0:
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1  // Si no es la última fila, salto
 	
-// Volver al comienzo del framebuffer
+	
+	// Volver al comienzo del framebuffer
 	mov x0, x20
+	add x0, x0, (SCREEN_WIDTH * 8) // Centra el rectangulo horizontalmente
 
 	// Definir color rojo
-	movz x10, 0x00FF, lsl 16     // parte alta (0xFF rojo)
-	movk x10, 0x0000, lsl 00     // parte baja (0x0000)
+	movz x10, 0xFF, lsl 16     // parte alta (0xFF rojo)
+	movk x10, 0x0000, lsl 00   // parte baja (0x0000)
 
 	// Alto del rectángulo = 250
 	mov x2, 250
+	
 rect_y_loop:
 	// Ancho del rectángulo = 200
 	mov x1, 200
@@ -51,6 +54,8 @@ rect_x_loop:
 	sub x2, x2, 1
 	cbnz x2, rect_y_loop
 
+	
+	
 	
 
 	// Ejemplo de uso de gpios
@@ -77,4 +82,12 @@ rect_x_loop:
 	// Infinite Loop
 
 InfLoop:
-	b InfLoop
+	b InfLoop	
+	
+	
+	
+	
+	
+	
+
+
