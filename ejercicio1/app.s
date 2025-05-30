@@ -13,6 +13,9 @@ main:
  	mov x20, x0	// Guarda la dirección base del framebuffer en x20
 	//---------------- CODE HERE ------------------------------------
 
+
+        // COLOR DE FONDO DE LA IMAGEN
+        
 	movz x10, 0x00, lsl 16  
 	movk x10, 0xFFCC, lsl 00    // color 1 (verde)
 
@@ -28,9 +31,15 @@ loop0:
 	cbnz x2,loop1  // Si no es la última fila, salto
 	
 	
+	
+	
+	
+	
+	//RECTANGULO CUERPO DEL PERSONAJE
+	
 	// Volver al comienzo del framebuffer
 	mov x0, x20
-	add x0, x0, (SCREEN_WIDTH * 8) // Centra el rectangulo horizontalmente
+	add x0, x0, (SCREEN_WIDTH * 2) - 400 // Centra el rectangulo horizontalmente
 
 	// Definir color rojo
 	movz x10, 0xFF, lsl 16     // parte alta (0xFF rojo)
