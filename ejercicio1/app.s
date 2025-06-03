@@ -190,7 +190,7 @@ loop2_lineaFondo6:
 	add x9, x9, x11
 	lsl x9, x9, 2
 	add x0, x0, x9
-		
+			
 	mov x2, 2
 loop1_lineaFondo7:
 	mov x1, 640
@@ -646,6 +646,667 @@ loop2_piso:
 	cbnz x1,loop2_piso  // Si no terminó la fila, salto
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_piso  // Si no es la última fila, salto
+
+
+
+	// SOMBRAS DEL PISO
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 325
+	mul x9, x9, x3
+	mov x11, 0
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	// Definimos el color
+	movz x10, 0x0F, lsl 16  
+	movk x10, 0x414F, lsl 00
+		       
+	mov x2, 46
+loop1_sombrasPiso:
+	mov x1, 63
+loop2_sombrasPiso:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 504) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 307
+	mul x9, x9, x3
+	mov x11, 9
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 152
+loop1_sombrasPiso1:
+	mov x1, 21
+loop2_sombrasPiso1:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso1
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 168) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso1
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 307
+	mul x9, x9, x3
+	mov x11, 30
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 40
+loop1_sombrasPiso2:
+	mov x1, 12
+loop2_sombrasPiso2:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso2
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 96) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso2
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 316
+	mul x9, x9, x3
+	mov x11, 40
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 85
+loop1_sombrasPiso3:
+	mov x1, 30
+loop2_sombrasPiso3:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso3
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 240) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso3
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 330
+	mul x9, x9, x3
+	mov x11, 22
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 100
+loop1_sombrasPiso4:
+	mov x1, 16
+loop2_sombrasPiso4:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso4
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso4
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 330
+	mul x9, x9, x3
+	mov x11, 47
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 240
+loop1_sombrasPiso5:
+	mov x1, 16
+loop2_sombrasPiso5:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso5
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso5
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 335
+	mul x9, x9, x3
+	mov x11, 60
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 23
+loop1_sombrasPiso6:
+	mov x1, 20
+loop2_sombrasPiso6:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso6
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 160) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso6
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 326
+	mul x9, x9, x3
+	mov x11, 75
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 80
+loop1_sombrasPiso7:
+	mov x1, 5
+loop2_sombrasPiso7:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso7
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 40) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso7
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 385
+	mul x9, x9, x3
+	mov x11, 0
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 46
+loop1_sombrasPiso8:
+	mov x1, 63
+loop2_sombrasPiso8:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso8
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 504) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso8
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 367
+	mul x9, x9, x3
+	mov x11, 9
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 152
+loop1_sombrasPiso9:
+	mov x1, 21
+loop2_sombrasPiso9:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso9
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 168) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso9
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 367
+	mul x9, x9, x3
+	mov x11, 30
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 40
+loop1_sombrasPiso10:
+	mov x1, 12
+loop2_sombrasPiso10:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso10
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 96) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso10
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 376
+	mul x9, x9, x3
+	mov x11, 40
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 85
+loop1_sombrasPiso11:
+	mov x1, 30
+loop2_sombrasPiso11:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso11
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 240) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso11
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 390
+	mul x9, x9, x3
+	mov x11, 22
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 100
+loop1_sombrasPiso12:
+	mov x1, 16
+loop2_sombrasPiso12:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso12
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso12
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 390
+	mul x9, x9, x3
+	mov x11, 47
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 240
+loop1_sombrasPiso13:
+	mov x1, 16
+loop2_sombrasPiso13:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso13
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso13
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 395
+	mul x9, x9, x3
+	mov x11, 60
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 23
+loop1_sombrasPiso14:
+	mov x1, 20
+loop2_sombrasPiso14:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso14
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 160) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso14
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 386
+	mul x9, x9, x3
+	mov x11, 75
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 80
+loop1_sombrasPiso15:
+	mov x1, 5
+loop2_sombrasPiso15:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso15
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 40) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso15
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 445
+	mul x9, x9, x3
+	mov x11, 0
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 46
+loop1_sombrasPiso16:
+	mov x1, 63
+loop2_sombrasPiso16:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso16
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 504) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso16
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 427
+	mul x9, x9, x3
+	mov x11, 9
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 152
+loop1_sombrasPiso17:
+	mov x1, 21
+loop2_sombrasPiso17:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso17
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 168) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso17
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 427
+	mul x9, x9, x3
+	mov x11, 30
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 40
+loop1_sombrasPiso18:
+	mov x1, 12
+loop2_sombrasPiso18:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso18
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 96) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso18
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 436
+	mul x9, x9, x3
+	mov x11, 40
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 85
+loop1_sombrasPiso19:
+	mov x1, 30
+loop2_sombrasPiso19:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso19
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 240) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso19
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 450
+	mul x9, x9, x3
+	mov x11, 22
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 100
+loop1_sombrasPiso20:
+	mov x1, 16
+loop2_sombrasPiso20:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso20
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso20
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 450
+	mul x9, x9, x3
+	mov x11, 47
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 240
+loop1_sombrasPiso21:
+	mov x1, 16
+loop2_sombrasPiso21:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso21
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 128) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso21
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 455
+	mul x9, x9, x3
+	mov x11, 60
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 23
+loop1_sombrasPiso22:
+	mov x1, 20
+loop2_sombrasPiso22:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso22
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 160) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso22
+
+
+	// Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer en donde queremos pintar
+	mov x9, 446
+	mul x9, x9, x3
+	mov x11, 75
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+		       
+	mov x2, 80
+loop1_sombrasPiso23:
+	mov x1, 5
+loop2_sombrasPiso23:
+	stur w10, [x0]             
+	add x0, x0, 4             
+	sub x1, x1, 1
+	cbnz x1, loop2_sombrasPiso23
+
+	// Salto a la siguiente fila  repitiendo patron 8 veces(SCREEN_WIDTH - rect_width * 8) / 2
+	add x0, x0, (SCREEN_WIDTH - 40) / 2
+
+	sub x2, x2, 1
+	cbnz x2, loop1_sombrasPiso23
+
+
+	
+
+
+
 
 
 
@@ -1293,6 +1954,15 @@ loop2_verChica9:
 	
 	sub x2, x2, 1
 	cbnz x2, loop1_verChica9
+
+
+
+
+
+
+	
+
+
 
 
 
