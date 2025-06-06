@@ -4651,7 +4651,7 @@ loop2_verChica9:
 
 
     	
-	// COFRE (Estado: normal)
+	// COFRE
 
 	// Dorado claro de fondo
 	
@@ -4667,8 +4667,8 @@ loop2_verChica9:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0xFD, lsl 16
-	movk x10, 0xC844, lsl 00
+	movz x10, 0xFD, lsl 16     
+	movk x10, 0xC844, lsl 00    
 
 	mov x2, 120
 loop1_cofreFondo:
@@ -4687,8 +4687,6 @@ loop2_cofreFondo:
 	
 
 
-
-
 	// Marron claro de arriba izquierda
 	
     // Volver al comienzo del framebuffer 
@@ -4703,8 +4701,8 @@ loop2_cofreFondo:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
 
 	mov x2, 50
 loop1_maderaArribaIzq:
@@ -4722,9 +4720,6 @@ loop2_maderaArribaIzq:
 	cbnz x2, loop1_maderaArribaIzq
 
 
-
-
-
 	// Marron claro de arriba derecha
 	
     // Volver al comienzo del framebuffer 
@@ -4739,8 +4734,8 @@ loop2_maderaArribaIzq:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
 
 	mov x2, 50
 loop1_maderaArribaDer:
@@ -4758,9 +4753,6 @@ loop2_maderaArribaDer:
 	cbnz x2, loop1_maderaArribaDer
 
 
-
-
-
 	// Marron claro de abajo
 	
     // Volver al comienzo del framebuffer 
@@ -4775,8 +4767,8 @@ loop2_maderaArribaDer:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
 
 	mov x2, 40
 loop1_maderaAbajo:
@@ -4792,8 +4784,6 @@ loop2_maderaAbajo:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_maderaAbajo
-
-
 
 
 
@@ -4831,8 +4821,6 @@ loop2_centroLinea:
 
 
 
-
-
 	// Linea boca gris
 	
     // Volver al comienzo del framebuffer 
@@ -4867,8 +4855,6 @@ loop2_lineaBoca:
 
 
 
-
-
 	// Diente 1
 	
     // Volver al comienzo del framebuffer 
@@ -4883,8 +4869,8 @@ loop2_lineaBoca:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
 
 	mov x2, 10
 loop1_diente1:
@@ -4902,9 +4888,6 @@ loop2_diente1:
 	cbnz x2, loop1_diente1
 
 
-
-
-
 	// Diente 2
 	
     // Volver al comienzo del framebuffer 
@@ -4919,8 +4902,8 @@ loop2_diente1:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
 
 	mov x2, 10
 loop1_diente2:
@@ -4939,8 +4922,6 @@ loop2_diente2:
 
 
 
-
-
     // Diente 3
 	
     // Volver al comienzo del framebuffer 
@@ -4955,8 +4936,8 @@ loop2_diente2:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
 
 	mov x2, 10
 loop1_diente3:
@@ -4972,8 +4953,6 @@ loop2_diente3:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_diente3
-
-
 
 
 
@@ -5010,9 +4989,6 @@ loop2_lineaLengua:
 	cbnz x2, loop1_lineaLengua
 
 
-
-
-
 	// Lengua 1
 	
     // Volver al comienzo del framebuffer 
@@ -5044,9 +5020,6 @@ loop2_lengua1:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_lengua1
-
-
-
 
 
 	// Lengua 2
@@ -5083,8 +5056,6 @@ loop2_lengua2:
 
 
 
-
-
 	// Marron claro izquierda
 	
     // Volver al comienzo del framebuffer 
@@ -5099,8 +5070,8 @@ loop2_lengua2:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0x9D, lsl 16
-	movk x10, 0x472C, lsl 00
+	movz x10, 0x9D, lsl 16      
+	movk x10, 0x472C, lsl 00    
 
 	mov x2, 10
 loop1_marronIzq:
@@ -5119,8 +5090,6 @@ loop2_marronIzq:
 
 
 
-
-
     // Marron claro derecha
 	
     // Volver al comienzo del framebuffer 
@@ -5135,8 +5104,8 @@ loop2_marronIzq:
 	add x0, x0, x9		
 
 	// Definir color 
-	movz x10, 0x9D, lsl 16
-	movk x10, 0x472C, lsl 00
+	movz x10, 0x9D, lsl 16      
+	movk x10, 0x472C, lsl 00    
 
 	mov x2, 10
 loop1_marronDer:
@@ -5152,7 +5121,6 @@ loop2_marronDer:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_marronDer
-
 
 
 
@@ -5191,8 +5159,6 @@ loop2_centroCofre:
 
 
 
-
-
 	// Centro dorado oscuro
 	
     // Volver al comienzo del framebuffer 
@@ -5224,53 +5190,6 @@ loop2_centroCofre2:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_centroCofre2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -6640,8 +6559,8 @@ loop2_ventanaSombra:
 	add x0,x0, x9 
 
 	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
+	movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 
 	mov x2, 120 //Y
@@ -6714,8 +6633,8 @@ mov x0, x20 //hago un "reset" del framebuffer
 	add x0,x0, x9 
 
 	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
+	movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 
 	mov x2, 120 //Y
@@ -6790,8 +6709,8 @@ mov x0, x20 //hago un "reset" del framebuffer
 	add x0,x0, x9 
 
 	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
+    movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 
 	mov x2, 120 //Y
@@ -7779,28 +7698,6 @@ loop2_pomo2:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_pomo2 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10829,17 +10726,6 @@ loop2_c78:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //---------------"pixeles" de la tela (los mas claros)----------------------------------------------
 
 
@@ -10994,85 +10880,6 @@ loop2_c82:
 
 
 
-/*
-
-
-    //Sogas-----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-	// Soga 1 (izquierda)
-	
-        // Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 0
-	mul x9, x9, x3
-	mov x11, 35
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-		
-	// Definimos el color del poste
-	movz x10, 0xFF, lsl 16  
-	movk x10, 0x8000, lsl 00
-	
-	mov x2, 250
-loop1_soga1:
-        mov x1, 5
-loop2_soga1:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_soga1  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 5) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_soga1  // Si no es la última fila, salto
-
-
-
-
-
-	// Soga 2 (derecha)
-	
-        // Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 0
-	mul x9, x9, x3
-	mov x11, 85
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-		
-	// Definimos el color del poste
-	movz x10, 0xFF, lsl 16  
-	movk x10, 0x8000, lsl 00
-	
-	mov x2, 250
-loop1_soga2:
-        mov x1, 5
-loop2_soga2:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_soga2  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 5) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_soga2  // Si no es la última fila, salto
-
-
-
-*/
-	
-	
-	
 
 	
 

@@ -1,10 +1,12 @@
 
-Memory Configuration
+There are no discarded input sections
 
-Name             Origin             Length             Attributes
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
 *default*        0x0000000000000000 0xffffffffffffffff
 
-Linker script and memory map
+Guión del enlazador y mapa de memoria
 
 LOAD app.o
 LOAD start.o
@@ -51,9 +53,9 @@ LOAD start.o
 OUTPUT(kernel8.elf elf64-littleaarch64)
 LOAD linker stubs
 
-.debug_line     0x0000000000000000     0x1767
- .debug_line    0x0000000000000000     0x1714 app.o
- .debug_line    0x0000000000001714       0x53 start.o
+.debug_line     0x0000000000000000     0x1742
+ .debug_line    0x0000000000000000     0x16f2 app.o
+ .debug_line    0x00000000000016f2       0x50 start.o
 
 .debug_info     0x0000000000000000       0x5c
  .debug_info    0x0000000000000000       0x2e app.o
@@ -69,7 +71,7 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000030       0x30 start.o
 
-.debug_str      0x0000000000000000       0x74
- .debug_str     0x0000000000000000       0x6c app.o
- .debug_str     0x000000000000006c        0x8 start.o
-                                         0x6e (size before relaxing)
+.debug_str      0x0000000000000000       0x67
+ .debug_str     0x0000000000000000       0x67 app.o
+                                         0x5f (tamaño antes de la relajación)
+ .debug_str     0x0000000000000067       0x61 start.o

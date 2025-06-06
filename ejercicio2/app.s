@@ -15,8 +15,765 @@ main:
 	
 	mov x3, 640 // Para usar el SCREEN_WIDTH con la instruccion mul
 	
+
+
+
 	
+// frame 1-2-3-4
+bl escena_base
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 15000
+loop1_delay1:
+    mov x1, 15000
+loop2_delay1:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay1
+    sub x2, x2, 1
+    cbnz x2, loop1_delay1 
+
+bl cargar_mago1
+
+  // loop delay
+
+    mov x2, 15000
+loop1_delay2:
+    mov x1, 15000
+loop2_delay2:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay2
+    sub x2, x2, 1
+    cbnz x2, loop1_delay2 
+
+bl cargar_mago2
+
+	// loop delay
+
+    mov x2, 15000
+loop1_delay3:
+    mov x1, 15000
+loop2_delay3:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay3
+    sub x2, x2, 1
+    cbnz x2, loop1_delay3 
+
+bl cargar_mago3
+
+    // loop delay
+
+    mov x2, 15000
+loop1_delay4:
+    mov x1, 15000
+loop2_delay4:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay4
+    sub x2, x2, 1
+    cbnz x2, loop1_delay4 
+
+
+
+
+
+
+
+
+//===== Frame 5 =============
+
+bl escena_base
+bl cofre_sano
+
+
+
+bl ataque_pos1
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay6:
+    mov x1, 4000
+loop2_delay6:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay6
+    sub x2, x2, 1
+    cbnz x2, loop1_delay6 
+
+
+
+
+
+
+
+
+
+
+// ========= Frame 6 ================
+
+bl escena_base
+bl cofre_sano
+
+
+bl ataque_pos2
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay8:
+    mov x1, 4000
+loop2_delay8:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay8
+    sub x2, x2, 1
+    cbnz x2, loop1_delay8 
+
+
+
+
+
+
+
+
+
+//=========== Frame 7 ==============
+
+bl escena_base
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay9:
+    mov x1, 4000
+loop2_delay9:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay9
+    sub x2, x2, 1
+    cbnz x2, loop1_delay9 
+
+bl ataque_pos3
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay10:
+    mov x1, 4000
+loop2_delay10:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay10
+    sub x2, x2, 1
+    cbnz x2, loop1_delay10 
+
+bl cofre_dañado
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay5:
+    mov x1, 4000
+loop2_delay5:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay5
+    sub x2, x2, 1
+    cbnz x2, loop1_delay5 
+
+
+bl cofre_sano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================================================= SEGUNDO ATAQUE ====================================================================================
+
+
+
+// ============ Frame 1-2-3-4 ============
+
+bl escena_base
+bl cofre_sano
+
+
+// loop delay
+
+    mov x2, 15000
+loop1_delay11:
+    mov x1, 15000
+loop2_delay11:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay11
+    sub x2, x2, 1
+    cbnz x2, loop1_delay11 
+
+bl cargar_mago1
+
+  // loop delay
+
+    mov x2, 15000
+loop1_delay12:
+    mov x1, 15000
+loop2_delay12:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay12
+    sub x2, x2, 1
+    cbnz x2, loop1_delay12 
+
+bl cargar_mago2
+
+	// loop delay
+
+    mov x2, 15000
+loop1_delay13:
+    mov x1, 15000
+loop2_delay13:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay13
+    sub x2, x2, 1
+    cbnz x2, loop1_delay13 
+
+bl cargar_mago3
+
+    // loop delay
+
+    mov x2, 15000
+loop1_delay14:
+    mov x1, 15000
+loop2_delay14:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay14
+    sub x2, x2, 1
+    cbnz x2, loop1_delay14 
+
+
+
+
+
+
+
+
+//===== Frame 5 =============
+
+bl escena_base
+bl cofre_sano
+
+
+
+bl ataque_pos1
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay16:
+    mov x1, 4000
+loop2_delay16:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay16
+    sub x2, x2, 1
+    cbnz x2, loop1_delay16 
+
+
+
+
+
+
+
+
+
+
+// ========= Frame 6 ================
+
+bl escena_base
+bl cofre_sano
+
+
+bl ataque_pos2
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay18:
+    mov x1, 4000
+loop2_delay18:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay18
+    sub x2, x2, 1
+    cbnz x2, loop1_delay18 
+
+
+
+
+
+
+
+
+
+//=========== Frame 7 ==============
+
+bl escena_base
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay19:
+    mov x1, 4000
+loop2_delay19:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay19
+    sub x2, x2, 1
+    cbnz x2, loop1_delay19 
+
+bl ataque_pos3
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay20:
+    mov x1, 4000
+loop2_delay20:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay20
+    sub x2, x2, 1
+    cbnz x2, loop1_delay20 
+
+
+bl cofre_dañado
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay15:
+    mov x1, 4000
+loop2_delay15:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay15
+    sub x2, x2, 1
+    cbnz x2, loop1_delay15
+
+bl cofre_sano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================================================= TERCER ATAQUE ====================================================================================
+
+
+
+// ============ Frame 1-2-3-4 ============
+
+bl escena_base
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 3000
+loop1_delay35:
+    mov x1, 3000
+loop2_delay35:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay35
+    sub x2, x2, 1
+    cbnz x2, loop1_delay35 
+// loop delay
+
+    mov x2, 15000
+loop1_delay21:
+    mov x1, 15000
+loop2_delay21:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay21
+    sub x2, x2, 1
+    cbnz x2, loop1_delay21 
+
+bl cargar_mago1
+
+  // loop delay
+
+    mov x2, 15000
+loop1_delay22:
+    mov x1, 15000
+loop2_delay22:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay22
+    sub x2, x2, 1
+    cbnz x2, loop1_delay22 
+
+bl cargar_mago2
+
+	// loop delay
+
+    mov x2, 15000
+loop1_delay23:
+    mov x1, 15000
+loop2_delay23:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay23
+    sub x2, x2, 1
+    cbnz x2, loop1_delay23 
+
+bl cargar_mago3
+
+    // loop delay
+
+    mov x2, 15000
+loop1_delay24:
+    mov x1, 15000
+loop2_delay24:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay24
+    sub x2, x2, 1
+    cbnz x2, loop1_delay24 
+
+
+
+
+
+
+
+
+//===== Frame 5 =============
+
+bl escena_base
+bl cofre_sano
+
+
+
+bl ataque_pos1
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay26:
+    mov x1, 4000
+loop2_delay26:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay26
+    sub x2, x2, 1
+    cbnz x2, loop1_delay26 
+
+
+
+
+
+
+
+
+
+
+// ========= Frame 6 ================
+
+bl escena_base
+bl cofre_sano
+
+
+bl ataque_pos2
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay28:
+    mov x1, 4000
+loop2_delay28:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay28
+    sub x2, x2, 1
+    cbnz x2, loop1_delay28 
+
+
+
+
+
+
+
+
+
+//=========== Frame 7 ==============
+
+bl escena_base
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay29:
+    mov x1, 4000
+loop2_delay29:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay29
+    sub x2, x2, 1
+    cbnz x2, loop1_delay29 
+
+bl ataque_pos3
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay30:
+    mov x1, 4000
+loop2_delay30:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay30
+    sub x2, x2, 1
+    cbnz x2, loop1_delay30 
+
+
+bl cofre_dañado
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay25:
+    mov x1, 4000
+loop2_delay25:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay25
+    sub x2, x2, 1
+    cbnz x2, loop1_delay25 
+
+
+
+bl cofre_sano
+
+bl escena_base
+
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay36:
+    mov x1, 4000
+loop2_delay36:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay36
+	sub x2, x2, 1
+    cbnz x2, loop1_delay36 
+
+
+
+
+
+// ------------------ frames muere --------------------
+
+bl cofre_muere
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay31:
+    mov x1, 4000
+loop2_delay31:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay31
+    sub x2, x2, 1
+    cbnz x2, loop1_delay31 
+
+bl cofre_sano
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay32:
+    mov x1, 4000
+loop2_delay32:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay32
+    sub x2, x2, 1
+    cbnz x2, loop1_delay32 
+
+bl cofre_muere
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay33:
+    mov x1, 4000
+loop2_delay33:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay33
+    sub x2, x2, 1
+    cbnz x2, loop1_delay33 
+
+bl cofre_sano
+
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay34:
+    mov x1, 4000
+loop2_delay34:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay34
+	sub x2, x2, 1
+    cbnz x2, loop1_delay34 
+
+
+
+
+
+
+
+
+
+
+// ---------- PARTICULAS -------------------------
+
+
+bl escena_base
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay39:
+    mov x1, 4000
+loop2_delay39:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay39
+	sub x2, x2, 1
+    cbnz x2, loop1_delay39
+
+bl particula3
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay40:
+    mov x1, 4000
+loop2_delay40:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay40
+	sub x2, x2, 1
+    cbnz x2, loop1_delay40
+
+
+bl particula1
+
+// loop delay
+
+    mov x2, 4000
+loop1_delay37:
+    mov x1, 4000
+loop2_delay37:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay37
+	sub x2, x2, 1
+    cbnz x2, loop1_delay37
+
+
+bl particula2
+
+// loop delay
+
+    mov x2, 7000
+loop1_delay38:
+    mov x1, 7000
+loop2_delay38:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay38
+	sub x2, x2, 1
+    cbnz x2, loop1_delay38
+
+
+
+// Frame final
+bl escena_base
+
+
+// loop delay
+
+    mov x2, 10000
+loop1_delay41:
+    mov x1, 10000
+loop2_delay41:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay41
+	sub x2, x2, 1
+    cbnz x2, loop1_delay41
+
+bl llave
+
+
+bl InfLoop
+
+
+
+escena_base:
+
+
+// ======================== FRAME 1 ================================
+	// x0 contiene la direccion base del framebuffer
+ 	mov x0, x20	// Guarda la dirección base del framebuffer en x20
+	//---------------- CODE HERE ------------------------------------
 	
+	mov x3, 640 // Para usar el SCREEN_WIDTH con la instruccion mul
+
+
+
 	// FONDO
 	
 	// Definimos el color
@@ -4651,1261 +5408,7 @@ loop2_verChica9:
 
 
     	
-	// COFRE (Estado: normal)
-
-	// Dorado claro de fondo
 	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFD, lsl 16
-	movk x10, 0xC844, lsl 00
-
-	mov x2, 120
-loop1_cofreFondo:
-	mov x1, 160
-loop2_cofreFondo:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_cofreFondo
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_cofreFondo
-	
-
-
-
-
-	// Marron claro de arriba izquierda
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 490
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
-
-	mov x2, 50
-loop1_maderaArribaIzq:
-	mov x1, 50
-loop2_maderaArribaIzq:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaArribaIzq
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 50) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaArribaIzq
-
-
-
-
-
-	// Marron claro de arriba derecha
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 560
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
-
-	mov x2, 50
-loop1_maderaArribaDer:
-	mov x1, 50
-loop2_maderaArribaDer:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaArribaDer
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 50) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaArribaDer
-
-
-
-
-
-	// Marron claro de abajo
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 480
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x71, lsl 16
-	movk x10, 0x2B12, lsl 00
-
-	mov x2, 40
-loop1_maderaAbajo:
-	mov x1, 140
-loop2_maderaAbajo:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaAbajo
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 140) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaAbajo
-
-
-
-
-
-	// Linea dorada oscura centro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xBE, lsl 16      
-	movk x10, 0x8013, lsl 00    
-
-	mov x2, 10
-loop1_centroLinea:
-	mov x1, 160
-loop2_centroLinea:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroLinea
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroLinea
-
-
-
-
-
-	// Linea boca gris
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x3B, lsl 16      
-	movk x10, 0x1502, lsl 00    
-
-	mov x2, 10
-loop1_lineaBoca:
-	mov x1, 160
-loop2_lineaBoca:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lineaBoca
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lineaBoca
-
-
-
-
-
-	// Diente 1
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 480
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente1:
-	mov x1, 10
-loop2_diente1:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente1
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente1
-
-
-
-
-
-	// Diente 2
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 500
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente2:
-	mov x1, 10
-loop2_diente2:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente2
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente2
-
-
-
-
-
-    // Diente 3
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 610
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente3:
-	mov x1, 10
-loop2_diente3:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente3
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente3
-
-
-
-
-
-	// Linea lengua 
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 570
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xAE, lsl 16      
-	movk x10, 0x1213, lsl 00    
-
-	mov x2, 10
-loop1_lineaLengua:
-	mov x1, 40
-loop2_lineaLengua:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lineaLengua
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 40) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lineaLengua
-
-
-
-
-
-	// Lengua 1
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 590
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xEC, lsl 16      
-	movk x10, 0x2623, lsl 00    
-
-	mov x2, 30
-loop1_lengua1:
-	mov x1, 20
-loop2_lengua1:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lengua1
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lengua1
-
-
-
-
-
-	// Lengua 2
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 330
-	mul x9, x9, x3
-	mov x11, 600
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xAE, lsl 16      
-	movk x10, 0x1213, lsl 00   
-
-	mov x2, 10
-loop1_lengua2:
-	mov x1, 10
-loop2_lengua2:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lengua2
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lengua2
-
-
-
-
-
-	// Marron claro izquierda
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 340
-	mul x9, x9, x3
-	mov x11, 490
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x9D, lsl 16
-	movk x10, 0x472C, lsl 00
-
-	mov x2, 10
-loop1_marronIzq:
-	mov x1, 20
-loop2_marronIzq:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_marronIzq
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_marronIzq
-
-
-
-
-
-    // Marron claro derecha
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 340
-	mul x9, x9, x3
-	mov x11, 590
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x9D, lsl 16
-	movk x10, 0x472C, lsl 00
-
-	mov x2, 10
-loop1_marronDer:
-	mov x1, 20
-loop2_marronDer:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_marronDer
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_marronDer
-
-
-
-
-
-    // Centro dorado claro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 280
-	mul x9, x9, x3
-	mov x11, 530
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFD, lsl 16     
-	movk x10, 0xC844, lsl 00    
-
-	mov x2, 50
-loop1_centroCofre:
-	mov x1, 40
-loop2_centroCofre:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroCofre
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 40) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroCofre
-
-
-
-
-
-	// Centro dorado oscuro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 290
-	mul x9, x9, x3
-	mov x11, 540
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xBE, lsl 16     
-	movk x10, 0x8013, lsl 00    
-
-	mov x2, 30
-loop1_centroCofre2:
-	mov x1, 20
-loop2_centroCofre2:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroCofre2
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroCofre2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-	// COFRE (Estado: siendo dañado)
-
-	// Dorado claro de fondo
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFD, lsl 16
-	movk x10, 0xC844, lsl 00
-
-	mov x2, 120
-loop1_cofreFondo_d:
-	mov x1, 160
-loop2_cofreFondo_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_cofreFondo_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_cofreFondo_d
-	
-
-
-
-
-	// Rojo claro de arriba izquierda (Estado: siendo dañado)
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 490
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16       // 71
-	movk x10, 0x3333, lsl 00    // 2B12
-
-	mov x2, 50
-loop1_maderaArribaIzq_d:
-	mov x1, 50
-loop2_maderaArribaIzq_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaArribaIzq_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 50) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaArribaIzq_d
-
-
-
-
-
-	// Rojo claro de arriba derecha (Estado: siendo dañado)
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 560
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16
-	movk x10, 0x3333, lsl 00
-
-	mov x2, 50
-loop1_maderaArribaDer_d:
-	mov x1, 50
-loop2_maderaArribaDer_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaArribaDer_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 50) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaArribaDer_d
-
-
-
-
-
-	// Rojo claro de abajo (Estado: siendo dañado)
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 480
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16
-	movk x10, 0x3333, lsl 00
-
-	mov x2, 40
-loop1_maderaAbajo_d:
-	mov x1, 140
-loop2_maderaAbajo_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_maderaAbajo_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 140) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_maderaAbajo_d
-
-
-
-
-
-	// Linea dorada oscura centro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xBE, lsl 16      
-	movk x10, 0x8013, lsl 00    
-
-	mov x2, 10
-loop1_centroLinea_d:
-	mov x1, 160
-loop2_centroLinea_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroLinea_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroLinea_d
-
-
-
-
-
-	// Linea boca gris
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0x3B, lsl 16      
-	movk x10, 0x1502, lsl 00    
-
-	mov x2, 10
-loop1_lineaBoca_d:
-	mov x1, 160
-loop2_lineaBoca_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lineaBoca_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lineaBoca_d
-
-
-
-
-
-	// Diente 1
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 480
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente1_d:
-	mov x1, 10
-loop2_diente1_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente1_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente1_d
-
-
-
-
-
-	// Diente 2
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 500
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente2_d:
-	mov x1, 10
-loop2_diente2_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente2_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente2_d
-
-
-
-
-
-    // Diente 3
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 610
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16      // Alternativa: 9E
-	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
-
-	mov x2, 10
-loop1_diente3_d:
-	mov x1, 10
-loop2_diente3_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_diente3_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_diente3_d
-
-
-
-
-
-	// Linea lengua 
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 300
-	mul x9, x9, x3
-	mov x11, 570
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xAE, lsl 16      
-	movk x10, 0x1213, lsl 00    
-
-	mov x2, 10
-loop1_lineaLengua_d:
-	mov x1, 40
-loop2_lineaLengua_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lineaLengua_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 40) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lineaLengua_d
-
-
-
-
-
-	// Lengua 1
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 310
-	mul x9, x9, x3
-	mov x11, 590
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xEC, lsl 16      
-	movk x10, 0x2623, lsl 00    
-
-	mov x2, 30
-loop1_lengua1_d:
-	mov x1, 20
-loop2_lengua1_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lengua1_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lengua1_d
-
-
-
-
-
-	// Lengua 2
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 330
-	mul x9, x9, x3
-	mov x11, 600
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xAE, lsl 16      
-	movk x10, 0x1213, lsl 00   
-
-	mov x2, 10
-loop1_lengua2_d:
-	mov x1, 10
-loop2_lengua2_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_lengua2_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 10) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_lengua2_d
-
-
-
-
-
-	// Rojo claro izquierda (Estado: siendo dañado)
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 340
-	mul x9, x9, x3
-	mov x11, 490
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16
-	movk x10, 0x3333, lsl 00
-
-	mov x2, 10
-loop1_marronIzq_2_d:
-	mov x1, 20
-loop2_marronIzq_2_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_marronIzq_2_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_marronIzq_2_d
-
-
-
-
-
-    // Rojo claro derecha (Estado: siendo dañado)
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar
-	mov x9, 340
-	mul x9, x9, x3
-	mov x11, 590
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16
-	movk x10, 0x3333, lsl 00
-
-	mov x2, 10
-loop1_marronDer_2_d:
-	mov x1, 20
-loop2_marronDer_2_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_marronDer_2_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_marronDer_2_d
-
-
-
-
-
-    // Centro dorado claro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 280
-	mul x9, x9, x3
-	mov x11, 530
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFD, lsl 16     
-	movk x10, 0xC844, lsl 00    
-
-	mov x2, 50
-loop1_centroCofre_d:
-	mov x1, 40
-loop2_centroCofre_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroCofre_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 40) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroCofre_d
-
-
-
-
-
-	// Centro dorado oscuro
-	
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 290
-	mul x9, x9, x3
-	mov x11, 540
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xBE, lsl 16     
-	movk x10, 0x8013, lsl 00    
-
-	mov x2, 30
-loop1_centroCofre2_d:
-	mov x1, 20
-loop2_centroCofre2_d:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_centroCofre2_d
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 20) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_centroCofre2_d
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// COFRE (Estado: muriendo)
-
-
-
-
-
-/*
-    // Volver al comienzo del framebuffer 
-	mov x0, x20		
-
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 240
-	mul x9, x9, x3
-	mov x11, 470
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9		
-
-	// Definir color 
-	movz x10, 0xFF, lsl 16
-	movk x10, 0xFFFF, lsl 00
-
-	mov x2, 120
-loop1_cofreFondo_m:
-	mov x1, 160
-loop2_cofreFondo_m:
-	stur w10, [x0]             
-	add x0, x0, 4              
-	sub x1, x1, 1
-	cbnz x1, loop2_cofreFondo_m
-
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 160) * 4
-
-	sub x2, x2, 1
-	cbnz x2, loop1_cofreFondo_m
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7275,8 +6778,8 @@ loop2_ventanaSombra:
 	add x0,x0, x9 
 
 	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
+	movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 
 	mov x2, 120 //Y
@@ -7349,9 +6852,8 @@ mov x0, x20 //hago un "reset" del framebuffer
 	add x0,x0, x9 
 
 	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
-
+	movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 	mov x2, 120 //Y
 
@@ -7423,11 +6925,9 @@ mov x0, x20 //hago un "reset" del framebuffer
 	add x9, x9, x11
 	lsl x9,x9, 2
 	add x0,x0, x9 
-
-	//Color
-	movz x10, 0x00, lsl 16
-	movk x10, 0x0000, lsl 00
-
+//Color
+	movz x10, 0x1F, lsl 16
+	movk x10, 0x1240, lsl 00
 
 	mov x2, 120 //Y
 
@@ -8414,957 +7914,6 @@ loop2_pomo2:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_pomo2 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //Partículas verdes---------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-        //1ra partícula
-
-
-
-
-
-
-
-
-
-        //Bloque central grande
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 156
-	mul x9, x9, x3
-	mov x11, 173
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 12
-loop1_parti1_cen_gra:
-        mov x1, 12
-loop2_parti1_cen_gra:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_cen_gra  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 12) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_cen_gra  // Si no es la última fila, salto
-
-
-
-
-
-
-
-
-        //Linea horizontal
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 165
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 4
-loop1_parti1_hor:
-        mov x1, 28
-loop2_parti1_hor:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_hor  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 28) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_hor  // Si no es la última fila, salto
-
-
-
-
-
-        //Linea vertical
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 148
-	mul x9, x9, x3
-	mov x11, 177
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 28
-loop1_parti1_ver:
-        mov x1, 4
-loop2_parti1_ver:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_ver  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_ver  // Si no es la última fila, salto
-
-
-
-
-
-        //Bloque central pequeno
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 177
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xE696, lsl 00
-	
-	mov x2, 4
-loop1_parti1_cen_peq:
-        mov x1, 4
-loop2_parti1_cen_peq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_cen_peq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_cen_peq  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo superior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 148
-	mul x9, x9, x3
-	mov x11, 177
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti1_sup:
-        mov x1, 4
-loop2_parti1_sup:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_sup  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_sup  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo derecho
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 189
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti1_der:
-        mov x1, 4
-loop2_parti1_der:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_der  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_der  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo inferior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 177
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti1_inf:
-        mov x1, 4
-loop2_parti1_inf:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_inf  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_inf  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo izquierdo
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 165
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti1_izq:
-        mov x1, 4
-loop2_parti1_izq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti1_izq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti1_izq  // Si no es la última fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //2da partícula
-
-
-
-
-
-
-
-
-
-        //Bloque central grande
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 168
-	mul x9, x9, x3
-	mov x11, 209
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 12
-loop1_parti2_cen_gra:
-        mov x1, 12
-loop2_parti2_cen_gra:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_cen_gra  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 12) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_cen_gra  // Si no es la última fila, salto
-
-
-
-
-
-
-
-
-        //Linea horizontal
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 201
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 4
-loop1_parti2_hor:
-        mov x1, 28
-loop2_parti2_hor:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_hor  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 28) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_hor  // Si no es la última fila, salto
-
-
-
-
-
-        //Linea vertical
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 213
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 28
-loop1_parti2_ver:
-        mov x1, 4
-loop2_parti2_ver:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_ver  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_ver  // Si no es la última fila, salto
-
-
-
-
-
-        //Bloque central pequeno
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 213
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xE696, lsl 00
-	
-	mov x2, 4
-loop1_parti2_cen_peq:
-        mov x1, 4
-loop2_parti2_cen_peq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_cen_peq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_cen_peq  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo superior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 160
-	mul x9, x9, x3
-	mov x11, 213
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti2_sup:
-        mov x1, 4
-loop2_parti2_sup:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_sup  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_sup  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo derecho
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 225
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti2_der:
-        mov x1, 4
-loop2_parti2_der:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_der  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_der  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo inferior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 184
-	mul x9, x9, x3
-	mov x11, 213
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti2_inf:
-        mov x1, 4
-loop2_parti2_inf:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_inf  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_inf  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo izquierdo
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 201
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti2_izq:
-        mov x1, 4
-loop2_parti2_izq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti2_izq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti2_izq  // Si no es la última fila, salto
-
-
-
-
-
-
-
-
-
-
-        //3ra partícula
-
-
-
-
-
-
-        //Bloque central grande
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 180
-	mul x9, x9, x3
-	mov x11, 137
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 12
-loop1_parti3_cen_gra:
-        mov x1, 12
-loop2_parti3_cen_gra:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_cen_gra  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 12) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_cen_gra  // Si no es la última fila, salto
-
-
-
-
-
-
-        //Linea horizontal
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 184
-	mul x9, x9, x3
-	mov x11, 129
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 4
-loop1_parti3_hor:
-        mov x1, 28
-loop2_parti3_hor:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_hor  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 28) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_hor  // Si no es la última fila, salto
-
-
-
-
-
-
-        //Linea vertical
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 172
-	mul x9, x9, x3
-	mov x11, 141
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xC94D, lsl 00
-	
-	mov x2, 28
-loop1_parti3_ver:
-        mov x1, 4
-loop2_parti3_ver:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_ver  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_ver  // Si no es la última fila, salto
-
-
-
-
-
-        //Bloque central pequeno
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 184
-	mul x9, x9, x3
-	mov x11, 141
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0xE696, lsl 00
-	
-	mov x2, 4
-loop1_parti3_cen_peq:
-        mov x1, 4
-loop2_parti3_cen_peq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_cen_peq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_cen_peq  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo superior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 174
-	mul x9, x9, x3
-	mov x11, 141
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti3_sup:
-        mov x1, 4
-loop2_parti3_sup:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_sup  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_sup  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo derecho
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 184
-	mul x9, x9, x3
-	mov x11, 153
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti3_der:
-        mov x1, 4
-loop2_parti3_der:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_der  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_der  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo inferior
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 196
-	mul x9, x9, x3
-	mov x11, 141
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti3_inf:
-        mov x1, 4
-loop2_parti3_inf:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_inf  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_inf  // Si no es la última fila, salto
-
-
-
-
-
-        //Extremo izquierdo
-
-	// Volver al comienzo del framebuffer
-	mov x0, x20
-	
-	// Ubicamos el framebuffer en donde queremos pintar	
-	mov x9, 184
-	mul x9, x9, x3
-	mov x11, 129
-	add x9, x9, x11
-	lsl x9, x9, 2
-	add x0, x0, x9
-	
-	// Definimos el color del cartel
-	movz x10, 0x00, lsl 16  
-	movk x10, 0x9611, lsl 00
-	
-	mov x2, 4
-loop1_parti3_izq:
-        mov x1, 4
-loop2_parti3_izq:
-        stur w10,[x0]  // Colorear el pixel N
-	add x0,x0,4	   // Siguiente pixel
-	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_parti3_izq  // Si no terminó la fila, salto
-	
-	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 4) * 4
-	
-	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_parti3_izq  // Si no es la última fila, salto
-
-
-
 
 
 
@@ -12393,17 +10942,6 @@ loop2_c78:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //---------------"pixeles" de la tela (los mas claros)----------------------------------------------
 
 
@@ -12558,84 +11096,3829 @@ loop2_c82:
 
 
 
-/*
 
 
-    //Sogas-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	// Soga 1 (izquierda)
+
+
+//==================== PODER DEL MAGO ============================
 	
-        // Volver al comienzo del framebuffer
+ret
+
+
+// ------------------------ CARGA ----------------------------------
+
+cargar_mago1:
+
+    // Primera carga rojo
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+    //Ubico el framebuffer en donde quiero pintar
+	mov x9, 260  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 310  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 10 //Y
+loop1_fuegoPrimera:
+	mov x1, 10 //X
+loop2_fuegoPrimera:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoPrimera // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 10) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoPrimera // Si no es la ultima fila, salto
+
+
+ret
+  // ---------------------------------------------------------------
+
+
+cargar_mago2:
+
+
+
+  // Segunda carga rojo 
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+    //Ubico el framebuffer en donde quiero pintar
+	mov x9, 250  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 300  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 30 //Y
+loop1_fuegoSegunda1:
+	mov x1, 30 //X
+loop2_fuegoSegunda1:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoSegunda1 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 30) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoSegunda1 // Si no es la ultima fila, salto
+
+
+  // Segunda carga anaranjado
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+    //Ubico el framebuffer en donde quiero pintar
+	mov x9, 260  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 310  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF7, lsl 16
+	movk x10, 0x7801, lsl 00
+
+	mov x2, 10 //Y
+loop1_fuegoSegunda2:
+	mov x1, 10 //X
+loop2_fuegoSegunda2:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoSegunda2 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 10) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoSegunda2 // Si no es la ultima fila, salto
+
+
+
+
+
+ret
+  // -----------------------------------------------------------------
+
+cargar_mago3:
+
+
+
+
+
+  
+
+
+
+    // Carga final rojo
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 235  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 295  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 60 //Y
+loop1_fuegoFinalRojo1:
+	mov x1, 40 //X
+loop2_fuegoFinalRojo1:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoFinalRojo1 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoFinalRojo1 // Si no es la ultima fila, salto
+
+
+	mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 285  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	mov x2, 40 //Y
+loop1_fuegoFinalRojo2:
+	mov x1, 60 //X
+loop2_fuegoFinalRojo2:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoFinalRojo2 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 60) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoFinalRojo2 // Si no es la ultima fila, salto
+
+
+
+
+	//Carga final anaranjado
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 295  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF7, lsl 16
+	movk x10, 0x7801, lsl 00
+
+	mov x2, 40 //Y
+loop1_fuegoFinalAnaranjado:
+	mov x1, 40 //X
+loop2_fuegoFinalAnaranjado:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoFinalAnaranjado // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoFinalAnaranjado // Si no es la ultima fila, salto
+
+
+
+
+    //Carga final amarillo
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 255  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 305  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF0, lsl 16
+	movk x10, 0xF802, lsl 00
+
+	mov x2, 20 //Y
+loop1_fuegoFinalAmarillo:
+	mov x1, 20 //X
+loop2_fuegoFinalAmarillo:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoFinalAmarillo // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 20) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoFinalAmarillo // Si no es la ultima fila, salto
+
+
+ret
+  // ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// frame 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =========================== FRAME 5 ================================
+ataque_pos1:
+
+// --------------------------- ATAQUE -----------------------------------
+
+
+
+    // Primer ataque posicion 1
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 235  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 340  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF7, lsl 16
+	movk x10, 0x7801, lsl 00
+
+	mov x2, 60 //Y
+loop1_fuegoAtaque1Pos1Rojo1:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos1Rojo1:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos1Rojo1 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos1Rojo1 // Si no es la ultima fila, salto
+
+
+	mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 330  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos1Rojo2:
+	mov x1, 60 //X
+loop2_fuegoAtaque1Pos1Rojo2:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos1Rojo2 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 60) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos1Rojo2 // Si no es la ultima fila, salto
+
+
+
+
+	// Primer ataque anaranjado posicion 1
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 340  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF0, lsl 16
+	movk x10, 0xF802, lsl 00
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos1Anaranjado:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos1Anaranjado:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos1Anaranjado // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos1Anaranjado // Si no es la ultima fila, salto
+
+
+
+
+    // Primer ataque amarillo posicion 1
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 255  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 350  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 20 //Y
+loop1_fuegoAtaque1Pos1Amarillo:
+	mov x1, 20 //X
+loop2_fuegoAtaque1Pos1Amarillo:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos1Amarillo // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 20) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos1Amarillo // Si no es la ultima fila, salto
+
+ret 
+  // ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================== FRAME 6 ============================= 
+
+ataque_pos2:
+
+
+ 
+
+    // Primer ataque posicion 2
+
+
+
+
+
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 235  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 385  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF0, lsl 16
+	movk x10, 0xF802, lsl 00
+
+	mov x2, 60 //Y
+loop1_fuegoAtaque1Pos2Rojo1:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos2Rojo1:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos2Rojo1 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos2Rojo1 // Si no es la ultima fila, salto
+
+
+
+
+	mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 375  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos2Rojo2:
+	mov x1, 60 //X
+loop2_fuegoAtaque1Pos2Rojo2:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos2Rojo2 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 60) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos2Rojo2 // Si no es la ultima fila, salto
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 385  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos2Anaranjado:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos2Anaranjado:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos2Anaranjado // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos2Anaranjado // Si no es la ultima fila, salto
+
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 255  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 395  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF7, lsl 16
+	movk x10, 0x7801, lsl 00
+
+	mov x2, 20 //Y
+loop1_fuegoAtaque1Pos2Amarillo:
+	mov x1, 20 //X
+loop2_fuegoAtaque1Pos2Amarillo:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos2Amarillo // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 20) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos2Amarillo // Si no es la ultima fila, salto
+
+
+ret
+	// -------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================== FRAME 7 ============================= 
+
+ataque_pos3:
+
+  // -------------------------------------------------  
+
+   // Primer ataque posicion 3
+
+
+
+
+
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 235  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 430  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xE4, lsl 16
+	movk x10, 0x2C00, lsl 00
+
+	mov x2, 60 //Y
+loop1_fuegoAtaque1Pos3Rojo1:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos3Rojo1:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos3Rojo1 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos3Rojo1 // Si no es la ultima fila, salto
+
+
+
+
+	mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 420  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos3Rojo2:
+	mov x1, 60 //X
+loop2_fuegoAtaque1Pos3Rojo2:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos3Rojo2 // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 60) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos3Rojo2 // Si no es la ultima fila, salto
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 245  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 430  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF7, lsl 16
+	movk x10, 0x7801, lsl 00
+
+	mov x2, 40 //Y
+loop1_fuegoAtaque1Pos3Anaranjado:
+	mov x1, 40 //X
+loop2_fuegoAtaque1Pos3Anaranjado:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos3Anaranjado // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 40) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos3Anaranjado // Si no es la ultima fila, salto
+
+
+
+
+
+    mov x0, x20 //hago un "reset" del framebuffer
+
+	//Ubico el framebuffer en donde quiero pintar
+	mov x9, 255  //fila donde quiero estar, esto es cuanto voy hacia abajo
+	mul x9, x9, x3
+	mov x11, 440  //columna donde quiero estar, esto es cuanto voy hacia la derecha
+	add x9, x9, x11
+	lsl x9,x9, 2
+	add x0,x0, x9 
+
+	//Color
+	movz x10, 0xF0, lsl 16
+	movk x10, 0xF802, lsl 00
+
+	mov x2, 20 //Y
+loop1_fuegoAtaque1Pos3Amarillo:
+	mov x1, 20 //X
+loop2_fuegoAtaque1Pos3Amarillo:
+	stur w10, [x0] //Pinta el pixel n
+	add x0, x0, 4  // Siguiente pixel
+	sub x1,x1, 1   // Disminuye en 1 el contador de X
+	cbnz x1, loop2_fuegoAtaque1Pos3Amarillo // Si no termina la fila, saltamos
+
+	add x0, x0, (SCREEN_WIDTH - 20) * 4 //Salto a la siguiente fila (SCREEN_W - FIGURA_W) * 4 bytes
+
+	sub x2, x2, 1 // Disminuye en 1 el contador de Y
+	cbnz x2, loop1_fuegoAtaque1Pos3Amarillo // Si no es la ultima fila, salto
+
+
+ret
+  // -------------------------------------------------------------------	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================ COFRE ==================================================
+
+
+// ------------------- Cofre sano ----------------------------------------------
+
+
+cofre_sano:
+
+
+
+
+// COFRE
+
+	// Dorado claro de fondo
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFD, lsl 16     
+	movk x10, 0xC844, lsl 00    
+
+	mov x2, 120
+loop1_cofreFondo:
+	mov x1, 160
+loop2_cofreFondo:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_cofreFondo
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_cofreFondo
+	
+
+
+	// Marron claro de arriba izquierda
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 490
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
+
+	mov x2, 50
+loop1_maderaArribaIzq:
+	mov x1, 50
+loop2_maderaArribaIzq:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaArribaIzq
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 50) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaArribaIzq
+
+
+	// Marron claro de arriba derecha
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 560
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
+
+	mov x2, 50
+loop1_maderaArribaDer:
+	mov x1, 50
+loop2_maderaArribaDer:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaArribaDer
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 50) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaArribaDer
+
+
+	// Marron claro de abajo
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 480
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x71, lsl 16     
+	movk x10, 0x2B12, lsl 00    
+
+	mov x2, 40
+loop1_maderaAbajo:
+	mov x1, 140
+loop2_maderaAbajo:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaAbajo
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 140) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaAbajo
+
+
+
+	// Linea dorada oscura centro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xBE, lsl 16      
+	movk x10, 0x8013, lsl 00    
+
+	mov x2, 10
+loop1_centroLinea:
+	mov x1, 160
+loop2_centroLinea:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroLinea
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroLinea
+
+
+
+	// Linea boca gris
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x3B, lsl 16      
+	movk x10, 0x1502, lsl 00    
+
+	mov x2, 10
+loop1_lineaBoca:
+	mov x1, 160
+loop2_lineaBoca:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lineaBoca
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lineaBoca
+
+
+
+	// Diente 1
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 480
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
+
+	mov x2, 10
+loop1_diente1:
+	mov x1, 10
+loop2_diente1:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente1
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente1
+
+
+	// Diente 2
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 500
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
+
+	mov x2, 10
+loop1_diente2:
+	mov x1, 10
+loop2_diente2:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente2
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente2
+
+
+
+    // Diente 3
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 610
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x9E, lsl 16      
+	movk x10, 0x9085, lsl 00    
+
+	mov x2, 10
+loop1_diente3:
+	mov x1, 10
+loop2_diente3:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente3
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente3
+
+
+
+	// Linea lengua 
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 570
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xAE, lsl 16      
+	movk x10, 0x1213, lsl 00    
+
+	mov x2, 10
+loop1_lineaLengua:
+	mov x1, 40
+loop2_lineaLengua:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lineaLengua
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 40) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lineaLengua
+
+
+	// Lengua 1
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 590
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xEC, lsl 16      
+	movk x10, 0x2623, lsl 00    
+
+	mov x2, 30
+loop1_lengua1:
+	mov x1, 20
+loop2_lengua1:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lengua1
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lengua1
+
+
+	// Lengua 2
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 330
+	mul x9, x9, x3
+	mov x11, 600
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xAE, lsl 16      
+	movk x10, 0x1213, lsl 00   
+
+	mov x2, 10
+loop1_lengua2:
+	mov x1, 10
+loop2_lengua2:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lengua2
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lengua2
+
+
+
+	// Marron claro izquierda
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 340
+	mul x9, x9, x3
+	mov x11, 490
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x9D, lsl 16      
+	movk x10, 0x472C, lsl 00    
+
+	mov x2, 10
+loop1_marronIzq:
+	mov x1, 20
+loop2_marronIzq:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_marronIzq
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_marronIzq
+
+
+
+    // Marron claro derecha
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 340
+	mul x9, x9, x3
+	mov x11, 590
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x9D, lsl 16      
+	movk x10, 0x472C, lsl 00    
+
+	mov x2, 10
+loop1_marronDer:
+	mov x1, 20
+loop2_marronDer:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_marronDer
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_marronDer
+
+
+
+
+    // Centro dorado claro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 280
+	mul x9, x9, x3
+	mov x11, 530
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFD, lsl 16     
+	movk x10, 0xC844, lsl 00    
+
+	mov x2, 50
+loop1_centroCofre:
+	mov x1, 40
+loop2_centroCofre:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroCofre
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 40) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroCofre
+
+
+
+	// Centro dorado oscuro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 290
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xBE, lsl 16     
+	movk x10, 0x8013, lsl 00    
+
+	mov x2, 30
+loop1_centroCofre2:
+	mov x1, 20
+loop2_centroCofre2:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroCofre2
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroCofre2
+
+
+
+ret	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // ====================== DAÑO DEL COFRE ====================================================
+
+
+  // ---------------------- Cofre dañado --------------------------------------
+
+
+cofre_dañado:
+
+
+  // COFRE (Estado: siendo dañado)
+
+	// Dorado claro de fondo
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFD, lsl 16
+	movk x10, 0xC844, lsl 00
+
+	mov x2, 120
+loop1_cofreFondo_d:
+	mov x1, 160
+loop2_cofreFondo_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_cofreFondo_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_cofreFondo_d
+	
+
+
+
+
+	// Rojo claro de arriba izquierda (Estado: siendo dañado)
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 490
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16       // 71
+	movk x10, 0x3333, lsl 00    // 2B12
+
+	mov x2, 50
+loop1_maderaArribaIzq_d:
+	mov x1, 50
+loop2_maderaArribaIzq_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaArribaIzq_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 50) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaArribaIzq_d
+
+
+
+
+
+	// Rojo claro de arriba derecha (Estado: siendo dañado)
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 560
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16
+	movk x10, 0x3333, lsl 00
+
+	mov x2, 50
+loop1_maderaArribaDer_d:
+	mov x1, 50
+loop2_maderaArribaDer_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaArribaDer_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 50) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaArribaDer_d
+
+
+
+
+
+	// Rojo claro de abajo (Estado: siendo dañado)
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 480
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16
+	movk x10, 0x3333, lsl 00
+
+	mov x2, 40
+loop1_maderaAbajo_d:
+	mov x1, 140
+loop2_maderaAbajo_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_maderaAbajo_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 140) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_maderaAbajo_d
+
+
+
+
+
+	// Linea dorada oscura centro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xBE, lsl 16      
+	movk x10, 0x8013, lsl 00    
+
+	mov x2, 10
+loop1_centroLinea_d:
+	mov x1, 160
+loop2_centroLinea_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroLinea_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroLinea_d
+
+
+
+
+
+	// Linea boca gris
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0x3B, lsl 16      
+	movk x10, 0x1502, lsl 00    
+
+	mov x2, 10
+loop1_lineaBoca_d:
+	mov x1, 160
+loop2_lineaBoca_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lineaBoca_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lineaBoca_d
+
+
+
+
+
+	// Diente 1
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 480
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16      // Alternativa: 9E
+	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+
+	mov x2, 10
+loop1_diente1_d:
+	mov x1, 10
+loop2_diente1_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente1_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente1_d
+
+
+
+
+
+	// Diente 2
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 500
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16      // Alternativa: 9E
+	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+
+	mov x2, 10
+loop1_diente2_d:
+	mov x1, 10
+loop2_diente2_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente2_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente2_d
+
+
+
+
+
+    // Diente 3
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 610
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16      // Alternativa: 9E
+	movk x10, 0xFFFF, lsl 00    // Alternativa: 9085
+
+	mov x2, 10
+loop1_diente3_d:
+	mov x1, 10
+loop2_diente3_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_diente3_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_diente3_d
+
+
+
+
+
+	// Linea lengua 
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 300
+	mul x9, x9, x3
+	mov x11, 570
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xAE, lsl 16      
+	movk x10, 0x1213, lsl 00    
+
+	mov x2, 10
+loop1_lineaLengua_d:
+	mov x1, 40
+loop2_lineaLengua_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lineaLengua_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 40) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lineaLengua_d
+
+
+
+
+
+	// Lengua 1
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 590
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xEC, lsl 16      
+	movk x10, 0x2623, lsl 00    
+
+	mov x2, 30
+loop1_lengua1_d:
+	mov x1, 20
+loop2_lengua1_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lengua1_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lengua1_d
+
+
+
+
+
+	// Lengua 2
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 330
+	mul x9, x9, x3
+	mov x11, 600
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xAE, lsl 16      
+	movk x10, 0x1213, lsl 00   
+
+	mov x2, 10
+loop1_lengua2_d:
+	mov x1, 10
+loop2_lengua2_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_lengua2_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_lengua2_d
+
+
+
+
+
+	// Rojo claro izquierda (Estado: siendo dañado)
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 340
+	mul x9, x9, x3
+	mov x11, 490
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16
+	movk x10, 0x3333, lsl 00
+
+	mov x2, 10
+loop1_marronIzq_2_d:
+	mov x1, 20
+loop2_marronIzq_2_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_marronIzq_2_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_marronIzq_2_d
+
+
+
+
+
+    // Rojo claro derecha (Estado: siendo dañado)
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar
+	mov x9, 340
+	mul x9, x9, x3
+	mov x11, 590
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16
+	movk x10, 0x3333, lsl 00
+
+	mov x2, 10
+loop1_marronDer_2_d:
+	mov x1, 20
+loop2_marronDer_2_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_marronDer_2_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_marronDer_2_d
+
+
+
+
+
+    // Centro dorado claro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 280
+	mul x9, x9, x3
+	mov x11, 530
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFD, lsl 16     
+	movk x10, 0xC844, lsl 00    
+
+	mov x2, 50
+loop1_centroCofre_d:
+	mov x1, 40
+loop2_centroCofre_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroCofre_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 40) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroCofre_d
+
+
+
+
+
+	// Centro dorado oscuro
+	
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 290
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xBE, lsl 16     
+	movk x10, 0x8013, lsl 00    
+
+	mov x2, 30
+loop1_centroCofre2_d:
+	mov x1, 20
+loop2_centroCofre2_d:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_centroCofre2_d
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 20) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_centroCofre2_d
+
+
+
+
+ret
+
+// --------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------- Cofre muriendo --------------------------
+
+
+
+cofre_muere:
+ 
+
+
+
+
+	// COFRE (Estado: muriendo)
+
+
+
+
+
+
+    // Volver al comienzo del framebuffer 
+	mov x0, x20		
+
+	// Ubicamos el framebuffer donde queremos pintar	
+	mov x9, 240
+	mul x9, x9, x3
+	mov x11, 470
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9		
+
+	// Definir color 
+	movz x10, 0xFF, lsl 16
+	movk x10, 0xFFFF, lsl 00
+
+	mov x2, 120
+loop1_cofreFondo_m:
+	mov x1, 160
+loop2_cofreFondo_m:
+	stur w10, [x0]             
+	add x0, x0, 4              
+	sub x1, x1, 1
+	cbnz x1, loop2_cofreFondo_m
+
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 160) * 4
+
+	sub x2, x2, 1
+	cbnz x2, loop1_cofreFondo_m
+
+
+
+
+ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================================= Particulas =====================================
+
+
+particula1:
+
+        //1ra partícula
+
+
+
+
+        //Bloque central grande
+
+	// Volver al comienzo del framebuffer
 	mov x0, x20
 	
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 0
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 156
 	mul x9, x9, x3
-	mov x11, 35
+	mov x11, 173
 	add x9, x9, x11
 	lsl x9, x9, 2
 	add x0, x0, x9
-		
-	// Definimos el color del poste
-	movz x10, 0xFF, lsl 16  
-	movk x10, 0x8000, lsl 00
 	
-	mov x2, 250
-loop1_soga1:
-        mov x1, 5
-loop2_soga1:
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 12
+loop1_parti1_cen_gra:
+        mov x1, 12
+loop2_parti1_cen_gra:
         stur w10,[x0]  // Colorear el pixel N
 	add x0,x0,4	   // Siguiente pixel
 	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_soga1  // Si no terminó la fila, salto
+	cbnz x1,loop2_parti1_cen_gra  // Si no terminó la fila, salto
 	
 	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
-	add x0, x0, (SCREEN_WIDTH - 5) * 4
+	add x0, x0, (SCREEN_WIDTH - 12) * 4
 	
 	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_soga1  // Si no es la última fila, salto
+	cbnz x2,loop1_parti1_cen_gra  // Si no es la última fila, salto
 
 
 
 
 
-	// Soga 2 (derecha)
-	
-        // Volver al comienzo del framebuffer
+
+
+
+        //Linea horizontal
+
+	// Volver al comienzo del framebuffer
 	mov x0, x20
 	
-	// Ubicamos el framebuffer donde queremos pintar	
-	mov x9, 0
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
 	mul x9, x9, x3
-	mov x11, 85
+	mov x11, 165
 	add x9, x9, x11
 	lsl x9, x9, 2
 	add x0, x0, x9
-		
-	// Definimos el color del poste
-	movz x10, 0xFF, lsl 16  
-	movk x10, 0x8000, lsl 00
 	
-	mov x2, 250
-loop1_soga2:
-        mov x1, 5
-loop2_soga2:
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 4
+loop1_parti1_hor:
+        mov x1, 28
+loop2_parti1_hor:
         stur w10,[x0]  // Colorear el pixel N
 	add x0,x0,4	   // Siguiente pixel
 	sub x1,x1,1	   // Decrementar contador X
-	cbnz x1,loop2_soga2  // Si no terminó la fila, salto
+	cbnz x1,loop2_parti1_hor  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 28) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_hor  // Si no es la última fila, salto
+
+
+
+
+
+        //Linea vertical
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 148
+	mul x9, x9, x3
+	mov x11, 177
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 28
+loop1_parti1_ver:
+        mov x1, 4
+loop2_parti1_ver:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_ver  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_ver  // Si no es la última fila, salto
+
+
+
+
+
+        //Bloque central pequeno
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
+	mul x9, x9, x3
+	mov x11, 177
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xE696, lsl 00
+	
+	mov x2, 4
+loop1_parti1_cen_peq:
+        mov x1, 4
+loop2_parti1_cen_peq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_cen_peq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_cen_peq  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo superior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 148
+	mul x9, x9, x3
+	mov x11, 177
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti1_sup:
+        mov x1, 4
+loop2_parti1_sup:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_sup  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_sup  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo derecho
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
+	mul x9, x9, x3
+	mov x11, 189
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti1_der:
+        mov x1, 4
+loop2_parti1_der:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_der  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_der  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo inferior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 177
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti1_inf:
+        mov x1, 4
+loop2_parti1_inf:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_inf  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_inf  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo izquierdo
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
+	mul x9, x9, x3
+	mov x11, 165
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti1_izq:
+        mov x1, 4
+loop2_parti1_izq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti1_izq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti1_izq  // Si no es la última fila, salto
+
+
+
+
+
+
+
+ret
+
+
+
+
+
+
+
+
+
+// ---------------------------------- particula 2 ----------------------------------
+
+particula2:
+
+    //Bloque central grande
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 168
+	mul x9, x9, x3
+	mov x11, 209
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 12
+loop1_parti2_cen_gra:
+        mov x1, 12
+loop2_parti2_cen_gra:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_cen_gra  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 12) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_cen_gra  // Si no es la última fila, salto
+
+
+
+
+
+
+
+
+        //Linea horizontal
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 201
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 4
+loop1_parti2_hor:
+        mov x1, 28
+loop2_parti2_hor:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_hor  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 28) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_hor  // Si no es la última fila, salto
+
+
+
+
+
+        //Linea vertical
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
+	mul x9, x9, x3
+	mov x11, 213
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 28
+loop1_parti2_ver:
+        mov x1, 4
+loop2_parti2_ver:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_ver  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_ver  // Si no es la última fila, salto
+
+
+
+
+
+        //Bloque central pequeno
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 213
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xE696, lsl 00
+	
+	mov x2, 4
+loop1_parti2_cen_peq:
+        mov x1, 4
+loop2_parti2_cen_peq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_cen_peq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_cen_peq  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo superior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 160
+	mul x9, x9, x3
+	mov x11, 213
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti2_sup:
+        mov x1, 4
+loop2_parti2_sup:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_sup  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_sup  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo derecho
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 225
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti2_der:
+        mov x1, 4
+loop2_parti2_der:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_der  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_der  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo inferior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 184
+	mul x9, x9, x3
+	mov x11, 213
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti2_inf:
+        mov x1, 4
+loop2_parti2_inf:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_inf  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_inf  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo izquierdo
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 201
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti2_izq:
+        mov x1, 4
+loop2_parti2_izq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti2_izq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti2_izq  // Si no es la última fila, salto
+
+
+
+
+
+
+ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------- particula 3 -------------------------------------------
+
+
+
+particula3:
+
+
+
+        //Bloque central grande
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 180
+	mul x9, x9, x3
+	mov x11, 137
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 12
+loop1_parti3_cen_gra:
+        mov x1, 12
+loop2_parti3_cen_gra:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_cen_gra  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 12) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_cen_gra  // Si no es la última fila, salto
+
+
+
+
+
+
+        //Linea horizontal
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 184
+	mul x9, x9, x3
+	mov x11, 129
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 4
+loop1_parti3_hor:
+        mov x1, 28
+loop2_parti3_hor:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_hor  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 28) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_hor  // Si no es la última fila, salto
+
+
+
+
+
+
+        //Linea vertical
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 172
+	mul x9, x9, x3
+	mov x11, 141
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xC94D, lsl 00
+	
+	mov x2, 28
+loop1_parti3_ver:
+        mov x1, 4
+loop2_parti3_ver:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_ver  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_ver  // Si no es la última fila, salto
+
+
+
+
+
+        //Bloque central pequeno
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 184
+	mul x9, x9, x3
+	mov x11, 141
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0xE696, lsl 00
+	
+	mov x2, 4
+loop1_parti3_cen_peq:
+        mov x1, 4
+loop2_parti3_cen_peq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_cen_peq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_cen_peq  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo superior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 174
+	mul x9, x9, x3
+	mov x11, 141
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti3_sup:
+        mov x1, 4
+loop2_parti3_sup:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_sup  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_sup  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo derecho
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 184
+	mul x9, x9, x3
+	mov x11, 153
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti3_der:
+        mov x1, 4
+loop2_parti3_der:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_der  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_der  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo inferior
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 196
+	mul x9, x9, x3
+	mov x11, 141
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti3_inf:
+        mov x1, 4
+loop2_parti3_inf:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_inf  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_inf  // Si no es la última fila, salto
+
+
+
+
+
+        //Extremo izquierdo
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 184
+	mul x9, x9, x3
+	mov x11, 129
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x00, lsl 16  
+	movk x10, 0x9611, lsl 00
+	
+	mov x2, 4
+loop1_parti3_izq:
+        mov x1, 4
+loop2_parti3_izq:
+        stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_parti3_izq  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 4) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_parti3_izq  // Si no es la última fila, salto
+
+
+
+
+
+
+
+
+
+ret 
+
+
+
+
+// ================================================= LLAVE 	============================================0
+
+
+llave:
+
+
+// ----------------------- parte negra ---------------------------
+
+
+// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 305
+	mul x9, x9, x3
+	mov x11, 535
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	// Definimos el color del cartel
+	movz x10, 0x1D, lsl 16  
+	movk x10, 0x2030, lsl 00
+	
+	mov x2, 25
+loop1_llave1:
+    mov x1, 25
+loop2_llave1:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave1  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 25) * 4
+	
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave1  // Si no es la última fila, salto
+
+
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 530
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	mov x2, 15
+loop1_llave2:
+    mov x1, 35
+loop2_llave2:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave2  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 35) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave2  // Si no es la última fila, salto
+
+
+
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 265
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	mov x2, 70
+loop1_llave3:
+    mov x1, 15
+loop2_llave3:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave3  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 15) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave3  // Si no es la última fila, salto
+
+
+
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 265
+	mul x9, x9, x3
+	mov x11, 555
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	mov x2, 25
+loop1_llave4:
+    mov x1, 15
+loop2_llave4:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave4  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 15) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave4  // Si no es la última fila, salto
+
+
+
+
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 265
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+	mov x2, 70
+loop1_llave6:
+    mov x1, 15
+loop2_llave6:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave6  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 15) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave6  // Si no es la última fila, salto
+
+
+
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 270
+	mul x9, x9, x3
+	mov x11, 570
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave5:
+    mov x1, 5
+loop2_llave5:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave5  // Si no terminó la fila, salto
 	
 	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
 	add x0, x0, (SCREEN_WIDTH - 5) * 4
-	
+
 	sub x2,x2,1	   // Decrementar contador Y
-	cbnz x2,loop1_soga2  // Si no es la última fila, salto
+	cbnz x2,loop1_llave5  // Si no es la última fila, salto
 
 
 
-*/
+
+// -------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
 	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 280
+	mul x9, x9, x3
+	mov x11, 570
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave7:
+    mov x1, 5
+loop2_llave7:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave7  // Si no terminó la fila, salto
 	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave7  // Si no es la última fila, salto
+
+
+
+
+
+
+
+// ------------------------------------ Parte amarilla -----------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 270
+	mul x9, x9, x3
+	mov x11, 545
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+	
+    movz x10, 0xFF, lsl 16
+	movk x10, 0xD91E, lsl 00
+
+	mov x2, 15
+loop1_llave8:
+    mov x1, 25
+loop2_llave8:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave8  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 25) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave8  // Si no es la última fila, salto
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 270
+	mul x9, x9, x3
+	mov x11, 545
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 55
+loop1_llave9:
+    mov x1, 5
+loop2_llave9:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave9  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave9  // Si no es la última fila, salto
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 305
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 25
+loop1_llave10:
+    mov x1, 15
+loop2_llave10:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave10  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 15) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave10  // Si no es la última fila, salto
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 535
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 15
+loop1_llave11:
+    mov x1, 25
+loop2_llave11:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave11  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 25) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave11  // Si no es la última fila, salto
+
+
+
+
+
+
+
+// ------------------------- Parte anaranjada ---------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 270
+	mul x9, x9, x3
+	mov x11, 550
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	movz x10, 0xFF, lsl 16
+	movk x10, 0xAD00, lsl 00
+
+	mov x2, 15
+loop1_llave12:
+    mov x1, 10
+loop2_llave12:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave12  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave12  // Si no es la última fila, salto
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 285
+	mul x9, x9, x3
+	mov x11, 550
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave13:
+    mov x1, 5
+loop2_llave13:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave13  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave13  // Si no es la última fila, salto
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 305
+	mul x9, x9, x3
+	mov x11, 545
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave14:
+    mov x1, 10
+loop2_llave14:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave14  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave14  // Si no es la última fila, salto
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 550
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave15:
+    mov x1, 10
+loop2_llave15:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave15  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave15  // Si no es la última fila, salto
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 310
+	mul x9, x9, x3
+	mov x11, 555
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 15
+loop1_llave16:
+    mov x1, 5
+loop2_llave16:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave16  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave16  // Si no es la última fila, salto
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 320
+	mul x9, x9, x3
+	mov x11, 550
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave17:
+    mov x1, 10
+loop2_llave17:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave17  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave17  // Si no es la última fila, salto
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 325
+	mul x9, x9, x3
+	mov x11, 540
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave18:
+    mov x1, 15
+loop2_llave18:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave18  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 15) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave18  // Si no es la última fila, salto
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 320
+	mul x9, x9, x3
+	mov x11, 535
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave19:
+    mov x1, 5
+loop2_llave19:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave19  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave19  // Si no es la última fila, salto
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 315
+	mul x9, x9, x3
+	mov x11, 545
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	movz x10, 0x1D, lsl 16  
+	movk x10, 0x2030, lsl 00
+
+	mov x2, 5
+loop1_llave20:
+    mov x1, 5
+loop2_llave20:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave20  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 5) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave20  // Si no es la última fila, salto
+
+
+
+
+
+	// Volver al comienzo del framebuffer
+	mov x0, x20
+	
+	// Ubicamos el framebuffer en donde queremos pintar	
+	mov x9, 275
+	mul x9, x9, x3
+	mov x11, 560
+	add x9, x9, x11
+	lsl x9, x9, 2
+	add x0, x0, x9
+
+	mov x2, 5
+loop1_llave21:
+    mov x1, 10
+loop2_llave21:
+    stur w10,[x0]  // Colorear el pixel N
+	add x0,x0,4	   // Siguiente pixel
+	sub x1,x1,1	   // Decrementar contador X
+	cbnz x1,loop2_llave21  // Si no terminó la fila, salto
+	
+	// Salto a la siguiente fila (SCREEN_WIDTH - rect_width) * 4 bytes
+	add x0, x0, (SCREEN_WIDTH - 10) * 4
+
+	sub x2,x2,1	   // Decrementar contador Y
+	cbnz x2,loop1_llave21  // Si no es la última fila, salto
+
+
+ret 
+
+
+
 	
 
 	
