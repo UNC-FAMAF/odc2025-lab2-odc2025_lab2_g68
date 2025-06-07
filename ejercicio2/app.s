@@ -16,7 +16,7 @@ main:
 	mov x3, 640 // Para usar el SCREEN_WIDTH con la instruccion mul
 	
 
-
+loop1:
 
 	
 // frame 1-2-3-4
@@ -639,6 +639,20 @@ loop2_delay41:
 
 bl llave
 
+// loop delay
+
+    mov x2,20000
+loop1_delay412:
+    mov x1, 20000
+loop2_delay412:
+    sub x1,x1, 1  
+    cbnz x1, loop2_delay412
+	sub x2, x2, 1
+    cbnz x2, loop1_delay412
+
+
+
+bl loop1
 
 bl InfLoop
 
