@@ -36,33 +36,6 @@ loop2_edifArr:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// SOMBRAS DEL FONDO
 
 	// Volver al comienzo del framebuffer 
@@ -1365,24 +1338,6 @@ loop2_sombrasFondo47:
 
 	sub x2, x2, 1
 	cbnz x2, loop1_sombrasFondo47
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2691,19 +2646,6 @@ loop2_sombrasFondo95:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// LINEAS DEL FONDO
 
 	// Volver al comienzo del framebuffer 
@@ -3314,9 +3256,6 @@ loop2_piso:
 	cbnz x1,loop2_piso  // Si no terminó la fila, salto
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_piso  // Si no es la última fila, salto
-
-
-
 
 
 
@@ -3979,9 +3918,6 @@ loop2_sombrasPiso23:
 
 
 
-
-
-
 	// LINEAS DEL PISO
 
 	// Volver al comienzo del framebuffer
@@ -4631,26 +4567,7 @@ loop2_verChica9:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    	
+   	
 	// COFRE
 
 	// Dorado claro de fondo
@@ -5276,8 +5193,6 @@ loop2_cartel0:
 
 
 
-
-
 	// Volver al comienzo del framebuffer
 	mov x0, x20
 	
@@ -5380,8 +5295,6 @@ loop2_franja2:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_franja2  // Si no es la última fila, salto
-
-
 
 
 
@@ -5972,12 +5885,6 @@ loop2_dosa_hor_aba:
 
 
 
-
-
-
-
-
-
         //0 (linea vertical de izquierda)
 
 	// Volver al comienzo del framebuffer
@@ -6117,11 +6024,6 @@ loop2_0_ver_der:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_0_ver_der  // Si no es la última fila, salto
-
-
-
-
-
 
 
 
@@ -6481,34 +6383,6 @@ loop2_5_hor_aba:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-------------------- VENTANA (rectangulo externo sombreado gris) ---------------
 
 	mov x0, x20 //hago un "reset" del framebuffer
@@ -6763,24 +6637,6 @@ loop2_ventanaSombra_interna3:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_ventanaSombra_interna3 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7160,18 +7016,6 @@ loop2_md:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_md // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7698,21 +7542,6 @@ loop2_pomo2:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_pomo2 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -8283,13 +8112,6 @@ loop2_c16:
 
 
 
-
-
-
-
-
-
-
 // hasta ahora solo tengo hecho casi todos los colores negros
 // a partir de ahora sigo con el coloreado del mago------------------------------------------
 
@@ -8327,12 +8149,6 @@ loop2_c17:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c17 // Si no es la ultima fila, salto
-
-
-
-
-
-
 
 
 
@@ -8403,11 +8219,6 @@ loop2_c19:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c19 // Si no es la ultima fila, salto
-
-
-
-
-
 
 
 
@@ -8521,13 +8332,6 @@ loop2_c22:
 
 
 
-
-
-
-
-
-
-
 //"pixel" negro en el medio de baston-----------------------------------------------
 
 
@@ -8607,16 +8411,6 @@ loop2_c24:
 
 
 
-
-
-
-
-
-
-
-
-
-
 //botas parte oscura -----------------------------------------------
 
 
@@ -8690,14 +8484,6 @@ loop2_c26:
 
 
 
-
-
-
-
-
-
-
-
 //botas parte clara -----------------------------------------------
 
 
@@ -8766,12 +8552,6 @@ loop2_c28:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c28 // Si no es la ultima fila, salto
-
-
-
-
-
-
 
 
 
@@ -8882,14 +8662,6 @@ loop2_c31:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c31 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
 
 
 
@@ -9037,15 +8809,6 @@ loop2_c35:
 
 
 
-
-
-
-
-
-
-
-
-
 //---------------------parte clara del gorro-----------------------------------------------
 
 mov x0, x20 //hago un "reset" del framebuffer
@@ -9119,11 +8882,6 @@ loop2_c37:
 
 
 
-
-
-
-
-
 //------------armo los dos pixeles blancos del gorro-----------------------------------
 
 
@@ -9191,13 +8949,6 @@ loop2_c39:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c39 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
 
 
 
@@ -9408,16 +9159,6 @@ loop2_c45:
 
 
 
-
-
-
-
-
-
-
-
-
-
 //------------------------------parte color intermedio--------------------------
 mov x0, x20 //hago un "reset" del framebuffer
 
@@ -9521,21 +9262,6 @@ loop2_c48:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c48 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -9938,20 +9664,6 @@ loop2_c59:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-------comienzo con el rostro----------------------------------------------------
 
 //-----------parte blanca-------------------------------------
@@ -10059,20 +9771,6 @@ loop2_c62:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c62 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10329,18 +10027,6 @@ loop2_c69:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //-------------------------parte piel oscura---------------------------------
 
 
@@ -10491,20 +10177,6 @@ loop2_c73:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-----------------parte piel clara------------------------------------------------------
 
 
@@ -10579,19 +10251,6 @@ loop2_c75:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //------------------------parte labios del mago-----------------------------------------------
 
 
@@ -10626,22 +10285,6 @@ loop2_c76:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c76 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10717,11 +10360,6 @@ loop2_c78:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c78 // Si no es la ultima fila, salto
-
-
-
-
-
 
 
 
@@ -10876,13 +10514,6 @@ loop2_c82:
 
 
 
-
-
-
-
-
-	
-
 	// Ejemplo de uso de gpios
 	mov x9, GPIO_BASE
 
@@ -10908,11 +10539,6 @@ loop2_c82:
 
 InfLoop:
 	b InfLoop	
-	
-	
-	
-	
-	
-	
 
 
+	

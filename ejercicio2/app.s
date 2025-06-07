@@ -75,11 +75,6 @@ loop2_delay4:
 
 
 
-
-
-
-
-
 //===== Frame 5 =============
 
 bl escena_base
@@ -102,13 +97,6 @@ loop2_delay6:
 
 
 
-
-
-
-
-
-
-
 // ========= Frame 6 ================
 
 bl escena_base
@@ -128,12 +116,6 @@ loop2_delay8:
     cbnz x1, loop2_delay8
     sub x2, x2, 1
     cbnz x2, loop1_delay8 
-
-
-
-
-
-
 
 
 
@@ -181,36 +163,6 @@ loop2_delay5:
 
 
 bl cofre_sano
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -277,11 +229,6 @@ loop2_delay14:
 
 
 
-
-
-
-
-
 //===== Frame 5 =============
 
 bl escena_base
@@ -305,12 +252,6 @@ loop2_delay16:
 
 
 
-
-
-
-
-
-
 // ========= Frame 6 ================
 
 bl escena_base
@@ -330,12 +271,6 @@ loop2_delay18:
     cbnz x1, loop2_delay18
     sub x2, x2, 1
     cbnz x2, loop1_delay18 
-
-
-
-
-
-
 
 
 
@@ -383,35 +318,6 @@ loop2_delay15:
     cbnz x2, loop1_delay15
 
 bl cofre_sano
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -486,12 +392,6 @@ loop2_delay24:
     cbnz x2, loop1_delay24 
 
 
-
-
-
-
-
-
 //===== Frame 5 =============
 
 bl escena_base
@@ -515,12 +415,6 @@ loop2_delay26:
 
 
 
-
-
-
-
-
-
 // ========= Frame 6 ================
 
 bl escena_base
@@ -540,12 +434,6 @@ loop2_delay28:
     cbnz x1, loop2_delay28
     sub x2, x2, 1
     cbnz x2, loop1_delay28 
-
-
-
-
-
-
 
 
 
@@ -675,12 +563,6 @@ loop2_delay34:
 
 
 
-
-
-
-
-
-
 // ---------- PARTICULAS -------------------------
 
 
@@ -790,32 +672,6 @@ loop2_edifArr:
 	cbnz x1,loop2_edifArr  // Si no terminó la fila, salto
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_edifArr  // Si no es la última fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2125,25 +1981,6 @@ loop2_sombrasFondo47:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// Volver al comienzo del framebuffer 
 	mov x0, x20		
 
@@ -3448,19 +3285,6 @@ loop2_sombrasFondo95:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// LINEAS DEL FONDO
 
 	// Volver al comienzo del framebuffer 
@@ -4071,10 +3895,6 @@ loop2_piso:
 	cbnz x1,loop2_piso  // Si no terminó la fila, salto
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_piso  // Si no es la última fila, salto
-
-
-
-
 
 
 
@@ -4735,10 +4555,6 @@ loop2_sombrasPiso23:
 	
 
 
-
-
-
-
 	// LINEAS DEL PISO
 
 	// Volver al comienzo del framebuffer
@@ -5387,33 +5203,6 @@ loop2_verChica9:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    	
-	
-
-
-
-
-
  // POSTE DEL CARTEL
 	
         // Volver al comienzo del framebuffer
@@ -5491,9 +5280,6 @@ loop2_cartel0:
 
 
 //-------rectangulo marron del cartel---------------------------------------------------------
-
-
-
 
 
 
@@ -5599,9 +5385,6 @@ loop2_franja2:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_franja2  // Si no es la última fila, salto
-
-
-
 
 
 
@@ -6192,11 +5975,6 @@ loop2_dosa_hor_aba:
 
 
 
-
-
-
-
-
         //0 (linea vertical de izquierda)
 
 	// Volver al comienzo del framebuffer
@@ -6336,11 +6114,6 @@ loop2_0_ver_der:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_0_ver_der  // Si no es la última fila, salto
-
-
-
-
-
 
 
 
@@ -6700,34 +6473,6 @@ loop2_5_hor_aba:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-------------------- VENTANA (rectangulo externo sombreado gris) ---------------
 
 	mov x0, x20 //hago un "reset" del framebuffer
@@ -6979,26 +6724,6 @@ loop2_ventanaSombra_interna3:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_ventanaSombra_interna3 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7376,17 +7101,6 @@ loop2_md:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_md // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7914,21 +7628,6 @@ loop2_pomo2:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_pomo2 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -8498,14 +8197,6 @@ loop2_c16:
 
 
 
-
-
-
-
-
-
-
-
 // hasta ahora solo tengo hecho casi todos los colores negros
 // a partir de ahora sigo con el coloreado del mago------------------------------------------
 
@@ -8543,13 +8234,6 @@ loop2_c17:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c17 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
 
 
 
@@ -8619,13 +8303,6 @@ loop2_c19:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c19 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
 
 
 
@@ -8738,12 +8415,6 @@ loop2_c22:
 
 
 
-
-
-
-
-
-
 //"pixel" negro en el medio de baston-----------------------------------------------
 
 
@@ -8781,10 +8452,6 @@ loop2_c23:
 
 
 
-
-
-
-
 //"pixel" piel claro en el medio de baston-----------------------------------------------
 
 
@@ -8818,18 +8485,6 @@ loop2_c24:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c24 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -8906,14 +8561,6 @@ loop2_c26:
 
 
 
-
-
-
-
-
-
-
-
 //botas parte clara -----------------------------------------------
 
 
@@ -8982,15 +8629,6 @@ loop2_c28:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c28 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
 
 
 
@@ -9098,16 +8736,6 @@ loop2_c31:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c31 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -9254,14 +8882,6 @@ loop2_c35:
 
 
 
-
-
-
-
-
-
-
-
 //---------------------parte clara del gorro-----------------------------------------------
 
 mov x0, x20 //hago un "reset" del framebuffer
@@ -9335,11 +8955,6 @@ loop2_c37:
 
 
 
-
-
-
-
-
 //------------armo los dos pixeles blancos del gorro-----------------------------------
 
 
@@ -9407,14 +9022,6 @@ loop2_c39:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c39 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
 
 
 
@@ -9624,16 +9231,6 @@ loop2_c45:
 
 
 
-
-
-
-
-
-
-
-
-
-
 //------------------------------parte color intermedio--------------------------
 mov x0, x20 //hago un "reset" del framebuffer
 
@@ -9737,20 +9334,6 @@ loop2_c48:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c48 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10154,20 +9737,6 @@ loop2_c59:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-------comienzo con el rostro----------------------------------------------------
 
 //-----------parte blanca-------------------------------------
@@ -10275,21 +9844,6 @@ loop2_c62:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c62 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10546,17 +10100,6 @@ loop2_c69:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //-------------------------parte piel oscura---------------------------------
 
 
@@ -10707,20 +10250,6 @@ loop2_c73:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-----------------parte piel clara------------------------------------------------------
 
 
@@ -10793,21 +10322,6 @@ loop2_c75:
 	cbnz x2, loop1_c75 // Si no es la ultima fila, salto
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //------------------------parte labios del mago-----------------------------------------------
 
 
@@ -10842,21 +10356,6 @@ loop2_c76:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c76 // Si no es la ultima fila, salto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -10933,11 +10432,6 @@ loop2_c78:
 
 	sub x2, x2, 1 // Disminuye en 1 el contador de Y
 	cbnz x2, loop1_c78 // Si no es la ultima fila, salto
-
-
-
-
-
 
 
 
@@ -11091,16 +10585,6 @@ loop2_c82:
 
 
 
-
-
-
-
-
-
-
-
-
-
 //==================== PODER DEL MAGO ============================
 	
 ret
@@ -11218,13 +10702,6 @@ ret
   // -----------------------------------------------------------------
 
 cargar_mago3:
-
-
-
-
-
-  
-
 
 
     // Carga final rojo
@@ -11353,97 +10830,6 @@ ret
   // ------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// frame 5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =========================== FRAME 5 ================================
 ataque_pos1:
 
 // --------------------------- ATAQUE -----------------------------------
@@ -11576,119 +10962,11 @@ ret
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =============================== FRAME 6 ============================= 
-
 ataque_pos2:
 
 
- 
 
     // Primer ataque posicion 2
-
-
-
-
-
-
-
 
 
     mov x0, x20 //hago un "reset" del framebuffer
@@ -11816,96 +11094,10 @@ ret
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =============================== FRAME 7 ============================= 
-
 ataque_pos3:
 
-  // -------------------------------------------------  
 
    // Primer ataque posicion 3
-
-
-
-
-
-
-
-
 
     mov x0, x20 //hago un "reset" del framebuffer
 
@@ -12032,22 +11224,6 @@ ret
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ================================ COFRE ==================================================
 
 
@@ -12055,8 +11231,6 @@ ret
 
 
 cofre_sano:
-
-
 
 
 // COFRE
@@ -12604,28 +11778,7 @@ loop2_centroCofre2:
 ret	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // ====================== DAÑO DEL COFRE ====================================================
-
-
-  // ---------------------- Cofre dañado --------------------------------------
 
 
 cofre_dañado:
@@ -13210,38 +12363,12 @@ loop2_centroCofre2_d:
 
 ret
 
-// --------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ----------------------- Cofre muriendo --------------------------
 
 
-
 cofre_muere:
  
-
-
-
-
-	// COFRE (Estado: muriendo)
-
-
-
-
-
 
     // Volver al comienzo del framebuffer 
 	mov x0, x20		
@@ -13274,24 +12401,7 @@ loop2_cofreFondo_m:
 	cbnz x2, loop1_cofreFondo_m
 
 
-
-
 ret
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -13300,12 +12410,8 @@ ret
 
 particula1:
 
-        //1ra partícula
 
-
-
-
-        //Bloque central grande
+    //Bloque central grande
 
 	// Volver al comienzo del framebuffer
 	mov x0, x20
@@ -13336,11 +12442,6 @@ loop2_parti1_cen_gra:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti1_cen_gra  // Si no es la última fila, salto
-
-
-
-
-
 
 
 
@@ -13377,9 +12478,6 @@ loop2_parti1_hor:
 	cbnz x2,loop1_parti1_hor  // Si no es la última fila, salto
 
 
-
-
-
         //Linea vertical
 
 	// Volver al comienzo del framebuffer
@@ -13411,9 +12509,6 @@ loop2_parti1_ver:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti1_ver  // Si no es la última fila, salto
-
-
-
 
 
         //Bloque central pequeno
@@ -13449,9 +12544,6 @@ loop2_parti1_cen_peq:
 	cbnz x2,loop1_parti1_cen_peq  // Si no es la última fila, salto
 
 
-
-
-
         //Extremo superior
 
 	// Volver al comienzo del framebuffer
@@ -13483,8 +12575,6 @@ loop2_parti1_sup:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti1_sup  // Si no es la última fila, salto
-
-
 
 
 
@@ -13522,8 +12612,6 @@ loop2_parti1_der:
 
 
 
-
-
         //Extremo inferior
 
 	// Volver al comienzo del framebuffer
@@ -13555,9 +12643,6 @@ loop2_parti1_inf:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti1_inf  // Si no es la última fila, salto
-
-
-
 
 
         //Extremo izquierdo
@@ -13594,17 +12679,7 @@ loop2_parti1_izq:
 
 
 
-
-
-
-
 ret
-
-
-
-
-
-
 
 
 
@@ -13646,11 +12721,6 @@ loop2_parti2_cen_gra:
 
 
 
-
-
-
-
-
         //Linea horizontal
 
 	// Volver al comienzo del framebuffer
@@ -13682,9 +12752,6 @@ loop2_parti2_hor:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti2_hor  // Si no es la última fila, salto
-
-
-
 
 
         //Linea vertical
@@ -13720,9 +12787,6 @@ loop2_parti2_ver:
 	cbnz x2,loop1_parti2_ver  // Si no es la última fila, salto
 
 
-
-
-
         //Bloque central pequeno
 
 	// Volver al comienzo del framebuffer
@@ -13754,8 +12818,6 @@ loop2_parti2_cen_peq:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti2_cen_peq  // Si no es la última fila, salto
-
-
 
 
 
@@ -13793,8 +12855,6 @@ loop2_parti2_sup:
 
 
 
-
-
         //Extremo derecho
 
 	// Volver al comienzo del framebuffer
@@ -13829,8 +12889,6 @@ loop2_parti2_der:
 
 
 
-
-
         //Extremo inferior
 
 	// Volver al comienzo del framebuffer
@@ -13862,8 +12920,6 @@ loop2_parti2_inf:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti2_inf  // Si no es la última fila, salto
-
-
 
 
 
@@ -13902,30 +12958,13 @@ loop2_parti2_izq:
 
 
 
-
-
 ret
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // --------------------------------- particula 3 -------------------------------------------
 
 
-
 particula3:
-
 
 
         //Bloque central grande
@@ -13961,10 +13000,6 @@ loop2_parti3_cen_gra:
 	cbnz x2,loop1_parti3_cen_gra  // Si no es la última fila, salto
 
 
-
-
-
-
         //Linea horizontal
 
 	// Volver al comienzo del framebuffer
@@ -13996,9 +13031,6 @@ loop2_parti3_hor:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti3_hor  // Si no es la última fila, salto
-
-
-
 
 
 
@@ -14036,8 +13068,6 @@ loop2_parti3_ver:
 
 
 
-
-
         //Bloque central pequeno
 
 	// Volver al comienzo del framebuffer
@@ -14069,8 +13099,6 @@ loop2_parti3_cen_peq:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti3_cen_peq  // Si no es la última fila, salto
-
-
 
 
 
@@ -14108,8 +13136,6 @@ loop2_parti3_sup:
 
 
 
-
-
         //Extremo derecho
 
 	// Volver al comienzo del framebuffer
@@ -14141,8 +13167,6 @@ loop2_parti3_der:
 	
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_parti3_der  // Si no es la última fila, salto
-
-
 
 
 
@@ -14179,9 +13203,6 @@ loop2_parti3_inf:
 	cbnz x2,loop1_parti3_inf  // Si no es la última fila, salto
 
 
-
-
-
         //Extremo izquierdo
 
 	// Volver al comienzo del framebuffer
@@ -14215,15 +13236,7 @@ loop2_parti3_izq:
 	cbnz x2,loop1_parti3_izq  // Si no es la última fila, salto
 
 
-
-
-
-
-
-
-
 ret 
-
 
 
 
@@ -14455,9 +13468,6 @@ loop2_llave7:
 
 
 
-
-
-
 // ------------------------------------ Parte amarilla -----------------------
 
 	// Volver al comienzo del framebuffer
@@ -14553,10 +13563,6 @@ loop2_llave10:
 
 
 
-
-
-
-
 // --------------------------------------------------------------------------------------
 
 	// Volver al comienzo del framebuffer
@@ -14584,9 +13590,6 @@ loop2_llave11:
 
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_llave11  // Si no es la última fila, salto
-
-
-
 
 
 
@@ -14653,11 +13656,6 @@ loop2_llave13:
 
 	sub x2,x2,1	   // Decrementar contador Y
 	cbnz x2,loop1_llave13  // Si no es la última fila, salto
-
-
-
-
-
 
 
 
@@ -14918,9 +13916,6 @@ loop2_llave21:
 ret 
 
 
-
-	
-
 	
 
 	// Ejemplo de uso de gpios
@@ -14951,8 +13946,4 @@ InfLoop:
 	
 	
 	
-	
-	
-	
-
 
